@@ -10,23 +10,31 @@ console.log(AlexaImage)
 console.log(SiriImage)
 
 function App() {
-  
+
   return (
-    <div className="container">
-    <section className="section">
-      <div className="columns">
-        <div className="column is-3">
-          <ProfileCard title="Alexa" handle="Alexa99" image={AlexaImage} />
+    <div>
+      <section className='hero is-primary'>
+        <div className="hero-body">
+          <p className='title'> Personal Digital Assistants</p>
         </div>
-        <div className="column is-3">
-          <ProfileCard title="Cortana" handle="Cortana@32" image={CortanaImage} />
-        </div>
-        <div className="column is-3">
-          <ProfileCard title="Siri" handle="@Siri01" image={SiriImage} />
-        </div>
+      </section>
+
+      <div className="container">
+        <section className="section">
+          <div className="columns">
+            <div className="column is-3">
+              <ProfileCard title="Alexa" handle="Alexa99" image={AlexaImage} description="Alexa was created by Amazon and helps you buy things" />
+            </div>
+            <div className="column is-3">
+              <ProfileCard title="Cortana" handle="Cortana@32" image={CortanaImage} description="Cortana was created by Microsoft" />
+            </div>
+            <div className="column is-3">
+              <ProfileCard title="Siri" handle="@Siri01" image={SiriImage} description="Siri was created by Apple"/>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
+    </div>
   );
 }
 

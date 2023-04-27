@@ -1,5 +1,5 @@
 import React from 'react';
-function ProfileCard({ title, handle, image }) {
+function ProfileCard({ title, handle, image, description }) {
 
     // statement below is the same as:
     // const title = props.title
@@ -20,6 +20,7 @@ function ProfileCard({ title, handle, image }) {
                     <p className="title is -4"> {title}</p>
                     <p className="subtitle is-6"> {handle}</p>
                 </div>
+                <div className='content'>{description}</div>
             </div>
         </div>
     );
